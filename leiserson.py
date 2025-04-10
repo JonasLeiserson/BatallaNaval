@@ -11,6 +11,14 @@ CantidadDeBarcos = 2
 
 tablero = [["~" for _ in range(N)] for _ in range(N)]
 for i in range(CantidadDeBarcos):
+
+   TamañoBarco = input(" Ingrese CHICO si quiere un barco de una casilla, MEDIANO si quiere de 2 casillas o 3 si quiere un barco GRANDE")) = "CHICO"
+    if TamañoBarco == "CHICO"
+
+    else if  TamañoBarco == "MEDIANO"
+
+    else
+
     PosicionBarcoEnemigoFila = int(input("Ingresar posiciones barco numero " + str(i) + " en fila, entre 0 y " + str(N-1)))
     PosicionBarcoEnemigoColumna = int(input("Ingresar posiciones barco numero " + str(i) + " en fila entre 0 y " + str(N-1)))
 
