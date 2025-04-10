@@ -8,23 +8,30 @@ CantidadDeBarcos = 2
 
 #PosicionEnemigoFila =  random.randint(0, N-1)
 #PosicionEnemigoColumna = random.randint(0, N-1)
+N = 5  # Por ejemplo, un tablero de 5x5
+CantidadDeBarcos = 2  # Cambialo según lo que necesites
 
 tablero = [["~" for _ in range(N)] for _ in range(N)]
+
+def PosicionesBarcos():
+    fila = int(input("Ingresar la FILA del barco número " + str(i + 1) + " (entre 0 y " + str(N - 1) + "): "))
+    columna = int(input("Ingresar la COLUMNA del barco número " + str(i + 1) + " (entre 0 y " + str(N - 1) + "): "))
+    tablero[fila][columna] = "🚢"
+
 for i in range(CantidadDeBarcos):
+    TamañoBarco = input("Ingrese CHICO si quiere un barco de una casilla, MEDIANO si quiere de 2 casillas o GRANDE si quiere un barco de 3 casillas: ").upper()
 
-   TamañoBarco = input(" Ingrese CHICO si quiere un barco de una casilla, MEDIANO si quiere de 2 casillas o 3 si quiere un barco GRANDE")) = "CHICO"
-    if TamañoBarco == "CHICO"
+    if TamañoBarco == "CHICO":
+        PosicionesBarcos()
+    elif TamañoBarco == "MEDIANO":
+        PosicionesBarcos()
+    else:
+        PosicionesBarcos()
 
-    else if  TamañoBarco == "MEDIANO"
+print("\nTablero Final:")
+for fila in tablero:
+    print(" ".join(fila))
 
-    else
-
-    PosicionBarcoEnemigoFila = int(input("Ingresar posiciones barco numero " + str(i) + " en fila, entre 0 y " + str(N-1)))
-    PosicionBarcoEnemigoColumna = int(input("Ingresar posiciones barco numero " + str(i) + " en fila entre 0 y " + str(N-1)))
-
-    tablero[PosicionBarcoEnemigoFila][PosicionBarcoEnemigoColumna] = "🚢"
-    for fila in tablero:
-        print(fila)
 
 while CantidadDeDisparos > 0: 
     DisparoEjeX = int(input("Ingersar cordenadas de disparo eje x entre 0 y " + str(N-1)))
