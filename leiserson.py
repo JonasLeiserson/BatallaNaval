@@ -178,3 +178,5 @@ if CANTIDADDEDISPAROS_JUGADOR[turno] & CANTIDADDEDISPAROS_JUGADOR[rival] == 0:
     print("Empate, no le quedan disparos a nadie")
     for i in range(2):
         print(f"\nJugador {i+1}:\n  Aciertos: {aciertos[i]}\n  Errores: {Errores[i]}")
+
+#Usado Chatgpt y claude para debugeo de errores y formas de realizar acciones
